@@ -2,22 +2,22 @@
   <PropertyGroup>
     <AssemblyTitle>Akka.Logger.log4net</AssemblyTitle>
     <Description>log4net logging adapter for Akka.NET</Description>
-    <TargetFrameworks>net45;netstandard1.6</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <PackageTags>akka;actors;actor model;Akka;concurrency;log4net</PackageTags>
-    <Copyright>Copyright © 2013-2017 Akka.NET Contrib Team</Copyright>
+    <Copyright>Copyright © 2013-2023 Akka.NET Contrib Team</Copyright>
     <Authors>Akka.NET Contrib</Authors>
-    <VersionPrefix>1.3.1</VersionPrefix>
+    <VersionPrefix>1.5.13</VersionPrefix>
     <PackageIconUrl>http://getakka.net/images/akkalogo.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/AkkaNetContrib/Akka.Logger.log4net</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/AkkaNetContrib/Akka.Logger.log4net/blob/master/LICENSE</PackageLicenseUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageReleaseNotes>Support for Akka 1.3.1 and .NET Core</PackageReleaseNotes>
-    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.6' ">1.6.1</NetStandardImplicitPackageVersion>
+    <PackageReleaseNotes>Support for Akka 1.5.13 and log4net 2.0.15</PackageReleaseNotes>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Akka" Version="1.3.1" />
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Akka" Version="1.5.13" />
+    <PackageReference Include="log4net" Version="2.0.15" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
